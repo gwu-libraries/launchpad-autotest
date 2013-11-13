@@ -1,0 +1,18 @@
+// This is a template for creating a test script. 
+// Replace {NAME} with an appropriate string.
+//
+// m{MILESTONE} {ISSUE NUMBER(s)}
+// note: the parameter before functon suite(test) is the number of tests to perform
+casper.test.begin('{MILESTONE} #{ISSUE NUMBER(s) {BRIEF GIST}', 2, function suite(test) {
+casper.echo("Test environment: "+SERVER);
+var USECASE='/item/{BIBID}';
+var ENTITY=SERVER+USECASE;
+    casper.start(ENTITY, function() {
+	// in this example, the title is tested
+        test.assertTitle('Love of the Sacred Heart. - GWU Libraries','Title 823422 verified.');
+	// in this example, the existence of a string is tested
+	test.assertTextExists('Catholic', 'page body contains "Catholic"');
+    }).run(function() {
+        test.done();
+    });
+});
