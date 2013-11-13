@@ -1,0 +1,73 @@
+This repository contains casperjs scripts used to test the GW Libraries' Launchpad web application. In addition to the .js files, a configuration file and a few Shell scripts are provided to call the scripts.
+
+1. Install phantomjs
+   Get version 1.9
+
+sudo apt-get update
+sudo apt-get install build-essential chrpath git-core libssl-dev libfontconfig1-dev
+git clone git://github.com/ariya/phantomjs.git
+cd phantomjs
+git checkout 1.9
+./build.sh
+
+- - - - build will take a few minutes - - - - - - - - - - - - - - - - 
+
+2. Identify phantomjs
+
+   a) After the build completes, run command 
+      This command may locate it. 
+ 
+      $which phantomjs
+
+      if not, find where phantom_v1.9/phantomjs/bin/phantomjs is located.
+
+   b) Edit your .profile file, add the path to phantomjs
+      eg.,
+	
+      PATH=$PATH:/home/cummings/projects/phantom/phantom_v1.9/phantomjs/bin
+
+      Save changes to .profile
+
+   c) exit
+      logon again
+
+
+3. Install casperjs
+
+   Install casperjs by following the instructions posted here:
+
+   http://http://docs.casperjs.org/en/latest/installation.html#installing-from-git
+
+4. Download the files to your local repository
+
+   Verify you have files config.js, issue.sh, errorlists.sh, and some files with
+   the extension .js named after an issue number (eg., 248.js, 385.js)
+
+5. Edit the file named config.js 
+
+   a) Set the URL prefix to the appropriate server.
+   b) Save changes to config.js 
+
+6. Run a test using the shell script issue.sh
+   The script requires the name of a script file, such as 248.sh
+
+   	$sh issue.sh 248
+
+	Test results should appear on screen
+	A log file of test results will be named log-NNN.xml
+
+.. To run multiple tests use one of the shell scripts that call multiple
+   issues (eg. sh m14-001.sh) or create your own script to do that.
+
+.. Run the script errorslist.sh to identify any xml file that contains errors.
+   Optionally, put the xml log files somewhere where they may be parsed and or displayed.
+
+	$sh errorslist.sh
+
+
+.. To create new scripts, you may want to begin by making a copy of the template.txt file
+
+.. Documentation on the casperjs test suite API is available at
+
+   http://http://docs.casperjs.org/en/latest/modules/tester.html
+
