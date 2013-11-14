@@ -1,6 +1,6 @@
 // m14_003 #350 + #367 + #385  
 //
-casper.test.begin('m4_003 #367 #385 #350 No CLS link for GT DUE item', 1, function suite(test) { 
+casper.test.begin('m14_003 #367 #385 #350 No CLS link for GT DUE item', 1, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
 var USECASE='/item/11734014';
 var ENTITY=SERVER+USECASE;
