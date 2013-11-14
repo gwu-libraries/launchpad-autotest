@@ -1,6 +1,6 @@
 // m14_003 374 + 358 + 390 
 //
-casper.test.begin('m4_003 #374+358+390 ignore invalid match on OCLC', 1, function suite(test) { 
+casper.test.begin('m14_003 #374+358+390 ignore invalid match on OCLC', 1, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
 var USECASE='/item/7239079';
 var ENTITY=SERVER+USECASE;
