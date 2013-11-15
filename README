@@ -64,6 +64,15 @@ git checkout 1.9
 
 	$sh errorslist.sh
 
+.. A subdirectory, marc-tests, contains a set of scripts that test a MARC TAG -- rather 
+   than an issue. There is a different script to invoke the test, marc-test.sh and
+   the scripts have the naming convention marc-NNN.js where NNN is the MARC TAG
+   (eg. sh marc-test.sh marc-700). The script expects to find the config.js file
+   in parent directory.
+
+   The marc-NNN.js scripts basically duplicate the tests in lp/ui/tests/marc_test.py and
+   automate the tests on wiki page https://github.com/gwu-libraries/launchpad/wiki/MARC-Extraction
+
 
 .. To create new scripts, you may want to begin by making a copy of the template.txt file
 
