@@ -7,7 +7,7 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Lulu and the duck in the park', 'page title Lulu... found');
 	test.assertTextExists('Series', 'Series TAG 800');
-	test.assertTextExists('Mckay', 'found Mckay series');
+	test.assertTextExists('McKay', 'found Mckay series');
     }).run(function() {
         test.done();
     });
