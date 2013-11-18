@@ -1,4 +1,5 @@
-This repository contains casperjs scripts used to test the GW Libraries' Launchpad web application. In addition to the .js files, a configuration file and a few Shell scripts are provided to call the scripts.
+This repository contains casperjs scripts used to test the GW Libraries' Launchpad web application
+(https://github.com/gwu-libraries/launchpad). In addition to the .js files, a configuration file and a few Shell scripts are provided to call the scripts.
 
 1. Install phantomjs
    Get version 1.9
@@ -43,7 +44,7 @@ git checkout 1.9
    Verify you have files config.js, issue.sh, errorlists.sh, and some files with
    the extension .js named after an issue number (eg., 248.js, 385.js)
 
-5. Edit the file named config.js 
+5. Edit the file named config_template
 
    a) Set the URL prefix to the appropriate server.
    b) Save changes to config.js 
