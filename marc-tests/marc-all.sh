@@ -31,6 +31,15 @@ sh issue.sh marc-810
 sh issue.sh marc-811
 sh issue.sh marc-830
 #
+#			Subjects
+sh issue.sh marc-600
+sh issue.sh marc-610
+sh issue.sh marc-630
+sh issue.sh marc-650
+sh issue.sh marc-651
+#			Subject / Genre
+sh issue.sh marc-655
+#
 #			NOTES
 #			Funding / Sponsors
 sh issue.sh marc-536
