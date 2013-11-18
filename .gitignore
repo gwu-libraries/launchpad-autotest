@@ -1,0 +1,4 @@
+# test output
+*.xml
+# configuration file after the changes
+config.js
