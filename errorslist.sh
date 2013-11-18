@@ -1,4 +1,4 @@
 #
-# this command will identify any log file that has errors
+# this command will identify any log file that has failures
 #
-grep -v "errors=\"0\"" *.xml | cut -f1 -d:
+grep -v "failures=\"0\"" *.xml | cut -f1 -d:
