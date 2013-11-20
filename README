@@ -35,18 +35,18 @@ git checkout 1.9
 
 3. Install casperjs
 
-   Install casperjs by following the instructions posted here:
+   Install casperjs (Version 1.1.x) by following the instructions posted here:
 
    http://http://docs.casperjs.org/en/latest/installation.html#installing-from-git
 
 4. Download the files to your local repository
 
-   Verify you have files config.js, issue.sh, errorlists.sh, and some files with
-   the extension .js named after an issue number (eg., 248.js, 385.js)
+   Verify you have files config_template, issue.sh, errorlists.sh, and some files with
+   the extension .js named after an issue number (eg., 248.js, 385.js). There should also be a directory marc-tests containing more scripts named after a MARC tag (eg., marc-245.js)
 
-5. Edit the file named config_template
+5. Copy the file named config_template to config.js
 
-   a) Set the URL prefix to the appropriate server.
+   a) Edit config.js; Set the URL prefix to the appropriate server.
    b) Save changes to config.js 
 
 6. Run a test using the shell script issue.sh
@@ -55,12 +55,21 @@ git checkout 1.9
    	$sh issue.sh 248
 
 	Test results should appear on screen
-	A log file of test results will be named log-NNN.xml
+	The results will indicate if there are syntax errors in script. Otherwise,
+	the results indicate whether the test status is PASS or FAIL. 
+	A log file of test results will be generated. 
+	The log file will be named log-NNN.xml where NNN is the issue number.
 
 .. To run multiple tests use one of the shell scripts that call multiple
-   issues (eg. sh m14-001.sh) or create your own script to do that.
+   issues. Examples
+	
+	to run tests associated with m14_001:    $ sh sh m14-001.sh
+	to run tests associated with all m14:    $ sh m14.sh 
 
-.. Run the script errorslist.sh to identify any xml file that contains errors.
+   Alternately, create your own script to call as set of scripts.
+
+
+.. Run the script errorslist.sh to identify any xml file that contains failures.
    Optionally, put the xml log files somewhere where they may be parsed and or displayed.
 
 	$sh errorslist.sh
@@ -74,7 +83,9 @@ git checkout 1.9
    The marc-NNN.js scripts basically duplicate the tests in lp/ui/tests/marc_test.py and
    automate the tests on wiki page https://github.com/gwu-libraries/launchpad/wiki/MARC-Extraction
 
+   To run all the MARC tag tests, run the marc-all.sh script
 
+	$sh marc-all.sh
 .. To create new scripts, you may want to begin by making a copy of the template.txt file
 
 .. Documentation on the casperjs test suite API is available at
