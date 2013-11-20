@@ -41,7 +41,7 @@ fi
 if [ ! -f $1.js ];
 	then {
 		tput rev;
-		echo "Error: There is no MARC TAG test script in this directory named marc-$1.js";
+		echo "Error: There is no MARC TAG test script in this directory named $1.js";
 		tput rmso;
 		exit 30;
 	}
