@@ -2,3 +2,6 @@
 *.xml
 # configuration file after the changes
 config.js
+
+# vim swap files
+*.swp
