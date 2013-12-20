@@ -1,15 +1,15 @@
 // m15_002 #434 #459
 // 
 //
-casper.test.begin('m15_002 #434 #459 include MARC 022subfield L in issn lookup', 4, function suite(test) { 
+casper.test.begin('m15_002 #434 #459 GT Qatar stacks ineligible for CLS', 4, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
-var USECASE='/issn/0373-6237';
+var USECASE='/item/12881498'
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
-	test.assertTextExists('Biblioth' , 'page title Biblioth... found');
+	test.assertTextExists('The Interestings' , 'page title The Interestings... found');
 	test.assertTextExists('Details' , 'Verified Details tab');
-	test.assertTextExists('Van Ness Electronic Journals' , 'Verified UDC holding found');
-	test.assertTextExists('1953-8138' , 'Verified related ISSN 1953-8138 found');
+	test.assertTextExists('Qatar stacks' , 'Verified GT Qatar holding found');
+	test.assertTextDoesntExist('inst=GT' , 'Verified no CLS for Qatar found');
     }).run(function() {
         test.done();
     });
