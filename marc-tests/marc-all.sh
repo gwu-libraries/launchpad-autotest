@@ -47,6 +47,7 @@ sh marc-test.sh marc-300
 sh marc-test.sh marc-344
 sh marc-test.sh marc-346
 sh marc-test.sh marc-347
+sh marc-test.sh marc-351
 #
 #			Notes 5xx
 #
@@ -60,11 +61,13 @@ sh marc-test.sh marc-510
 sh marc-test.sh marc-511
 sh marc-test.sh marc-516
 sh marc-test.sh marc-520
+sh marc-test.sh marc-521
 sh marc-test.sh marc-530
 sh marc-test.sh marc-533
 sh marc-test.sh marc-534
 sh marc-test.sh marc-538
 sh marc-test.sh marc-540
+sh marc-test.sh marc-545
 sh marc-test.sh marc-546
 sh marc-test.sh marc-547
 sh marc-test.sh marc-550
@@ -77,3 +80,5 @@ sh marc-test.sh marc-588
 sh marc-test.sh marc-516	
 #			Funding / Sponsors
 sh marc-test.sh marc-536
+#			8xx ignore $6
+sh marc-test.sh marc-8xx
