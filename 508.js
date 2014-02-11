@@ -6,7 +6,7 @@ var USECASE='/item/787084';
 var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
 	casper.start(ENTITY, function() {
-    test.assertTextExists('Adante pastoral','retrieved a title, it matched');
+    test.assertTextExists('Andante pastoral','retrieved a title, it matched');
     }).run(function() {
         test.done();
     });
