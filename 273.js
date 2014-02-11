@@ -7,7 +7,7 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Public policy in Asia' , 'page displayed for GM title that has no WRLC match'); 
 	test.assertTextExists('George Mason' , 'page displayed has GM holding'); 
-	test.assertTextExists('Interlibrary Loan' , 'page displayed has Interlibrary loan link'); 
+	test.assertTextDoesntExist('Interlibrary Loan' , 'page displayed has Interlibrary loan link'); 
     }).run(function() {
         test.done();
     });
