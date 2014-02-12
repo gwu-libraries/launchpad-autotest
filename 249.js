@@ -3,7 +3,7 @@
 //
 casper.test.begin('m16_001 #249 move javascripts to static files', 4, function suite(test) {
 casper.echo("Test environment: "+SERVER);
-var USECASE='item/2341877';
+var USECASE='/item/2341877';
 var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
     casper.start(ENTITY, function() {

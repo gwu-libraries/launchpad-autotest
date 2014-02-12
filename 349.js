@@ -3,7 +3,7 @@
 //
 casper.test.begin('m16_001 #349 show WRLC due date', 2, function suite(test) {
 casper.echo("Test environment: "+SERVER);
-var USECASE='item/7594399';
+var USECASE='/item/7594399';
 var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
     casper.start(ENTITY, function() {
