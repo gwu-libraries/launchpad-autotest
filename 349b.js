@@ -8,8 +8,8 @@ var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
     casper.start(ENTITY, function() {
     test.assertTextExists('Society of Arts', 'book title verified');
-    test.assertTextDoesntExist('DUE', 'found word "DUE"');
-    test.assertTextExists('Off site', 'Status "Off site" (not DUE) verified');
+    test.assertTextDoesntExist('DUE', 'did not find found word "DUE"');
+    test.assertTextExists('Off-site', 'Status "Off site" (not DUE) verified');
     }).run(function() {
         test.done();
     });
