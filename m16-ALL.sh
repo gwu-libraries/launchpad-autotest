@@ -32,4 +32,22 @@ sh issue.sh 536
 sh issue.sh 538
 sh issue.sh 541
 # 
+# m16-002.sh has 3 tests to be written
+echo 'Skipping m16-002; need tests'
+#
+# m16-003.sh
+#
+echo 'Starting m16-003 tests'
+#
+sh issue.sh 488
+sh issue.sh 546
+sh issue.sh 553
+sh issue.sh 555
+sh issue.sh 556
+sh issue.sh 558
+sh issue.sh 563
+sh issue.sh 571
+sh issue.sh 574
+# 
+echo 'Finished m16-003 tests'
 echo 'Finished m16-ALL tests'
