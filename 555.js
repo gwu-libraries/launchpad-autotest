@@ -7,7 +7,7 @@ var USECASE='/isbn/9781454816454';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Basic contract law' , 'page title Basic contract law... found');
-	test.assertTextDoesntExist('Request' , 'Verified there is no Request link.');
+	test.assertTextDoesntExist('CLSReqForm?' , 'Verified there is no Request link.');
     }).run(function() {
         test.done();
     });
