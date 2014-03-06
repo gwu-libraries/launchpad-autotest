@@ -6,7 +6,7 @@ casper.echo("Test environment: "+SERVER);
 var USECASE='/item/13319347';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
-	test.assertTextExists('Cademos do Programa' , 'page title Cademo do Programa... found');
+	test.assertTextExists('Cadernos' , 'page title Caderno do Programa... found');
     }).run(function() {
         test.done();
     });
