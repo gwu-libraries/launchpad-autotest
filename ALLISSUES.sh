@@ -18,4 +18,14 @@ echo 'Starting tests for m15'
 sh m15-ALL.sh
 echo 'Finished testing m15'
 # 
+# m16
+#
+echo 'Starting tests for m16'
+sh m16-ALL.sh
+echo 'Finished testing m16'
+#
+echo 'Starting tests for m22 through 24-004'
+sh m24-002.sh
+echo 'Finished testing m22-24'
+#
 echo 'Finished ALL automated scripts'
