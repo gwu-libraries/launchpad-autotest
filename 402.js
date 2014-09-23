@@ -7,9 +7,9 @@ var USECASE='/item/11509414';
 var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
 	casper.start(ENTITY, function() {
-    test.assertTextExists('Interview with Robinson','title matched');
-    test.assertTextExists('American','institution matched');
-    test.assertTextExists('Internet Resources','location matched');
+    test.assertTextExists('Pyomo','title matched');
+    test.assertTextExists('George Washington','institution matched');
+    test.assertTextExists('Online','location matched');
     test.assertTextDoesntExist('Interlibrary Loan','verified ILL is omitted');
     }).run(function() {
         test.done();
