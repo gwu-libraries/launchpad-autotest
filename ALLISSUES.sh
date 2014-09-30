@@ -24,8 +24,10 @@ echo 'Starting tests for m16'
 sh m16-ALL.sh
 echo 'Finished testing m16'
 #
-echo 'Starting tests for m22 through 24-004'
+echo 'Starting tests for m22 through 24-003'
 sh m24-002.sh
-echo 'Finished testing m22-24'
+# issue 803 is the only one in milestone m24_003
+sh issue.sh 803.js
+echo 'Finished testing m22-24_003'
 #
 echo 'Finished ALL automated scripts'
