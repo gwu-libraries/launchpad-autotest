@@ -31,6 +31,10 @@ sh issue.sh 803
 sh issue.sh 809
 echo 'Finished testing m22-24_004'
 #
+echo 'Starting m26_001 tests'
+sh m26-001.sh
+echo 'Finished testing m26_001'
+#
 echo 'Starting m27-001 tests'
 sh m27-001.sh
 echo 'Finished testing m27-001'
