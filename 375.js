@@ -8,7 +8,7 @@ var ENTITY=SERVER+USECASE;
 	test.assertTextExists('National Poultry Improvement Plan','verified title'); 
 	test.assertTextExists('US GovPubs Online' , 'verified WRLC holdings'); 
 	test.assertTextExists('Available Online through Mason' , 'verified GM holdings'); 
-	test.assertTextExists('INTERNET' , 'verified GT holdings'); 
+	test.assertTextExists('Online' , 'verified GT holdings'); 
 	test.assertSelectorHasText('button' , 'Full text online'); 
     test.assertElementCount('button',3,'three buttons found');
     }).run(function() {
