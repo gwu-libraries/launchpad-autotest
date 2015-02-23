@@ -1,7 +1,7 @@
 // m29_001 #854 GM checked out items appear in holding on item page
 // test should fail if item is no longer checked out
 // 
-casper.test.begin('m29_001 #854  GM checked out items appear in holding on item page', 2, function suite(test) { 
+casper.test.begin('m29_001 #854  GM checked out items appear in holding on item page', 3, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
 casper.echo("test should fail if item is not checked out");
 var USECASE='/item/5856359';
