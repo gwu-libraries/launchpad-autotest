@@ -43,4 +43,8 @@ echo 'Starting m27-001 tests'
 sh m27-001.sh
 echo 'Finished testing m27-001'
 #
+echo 'Starting m29-001 tests'
+sh m29-001.sh
+echo 'Finished testing m29-001'
+#
 echo 'Finished ALL automated scripts'
