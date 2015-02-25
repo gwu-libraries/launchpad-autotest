@@ -1,5 +1,5 @@
 # m29_001.sh
-# not included 
+# not included 950, 951, 975, 962, 956, 967
 # 
 echo 'Starting m29-001 tests '
 # bug fix
