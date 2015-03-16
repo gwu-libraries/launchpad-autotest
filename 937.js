@@ -7,7 +7,7 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Foundations of clinical research' , 'matched title');
 	test.assertTextExists('Himmelfarb Health Sciences' , 'found Himmelfarb');
-	test.assertTextExists('Full text online' , 'found Full text online button');
+	test.assertTextExists('Online' , 'found Full text online button');
     }).run(function() {
         test.done();
     });
