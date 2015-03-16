@@ -7,7 +7,7 @@ var ENTITY=SERVER+USECASE;
 casper.echo(ENTITY);
 	casper.start(ENTITY, function() {
 	test.assertUrlMatch(ENTITY, 'url MATCH worked');
-    test.assertTextExists('get your ideal job','returned from external source');
+    test.assertTextExists('Get that Job','returned from external source');
     test.assertTextExists('Interlibrary Loan','Interlibrary loan link displayed');
     }).run(function() {
         test.done();
