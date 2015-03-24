@@ -47,4 +47,7 @@ echo 'Starting m29-001 tests'
 sh m29-001.sh
 echo 'Finished testing m29-001'
 #
+echo 'Starting m29-002 and m29-003 tests'
+# (m29-003.js includes both)
+sh m29-003.sh
 echo 'Finished ALL automated scripts'
