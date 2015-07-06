@@ -9,7 +9,7 @@ var ENTITY=SERVER+USECASE;
 	test.assertTextExists('US GovPubs Online' , 'verified WRLC holdings'); 
 	test.assertTextExists('Available Online through Mason' , 'verified GM holdings'); 
 	test.assertTextExists('Online' , 'verified GT holdings'); 
-	test.assertSelectorHasText('button' , 'Full text online'); 
+	test.assertSelectorHasText('button' , 'Online'); 
     test.assertElementCount('button',3,'three buttons found');
     }).run(function() {
         test.done();

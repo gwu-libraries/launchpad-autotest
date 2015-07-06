@@ -1,5 +1,5 @@
 // m15_001 marc-534
-//
+// THIS TEST WILL NOW FAIL, THE RECORD HAS BEEN REVISED IN THE CATALOG
 casper.test.begin('m15_001 marc-534 Original Version note', 3, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
 var USECASE='/item/12483219';

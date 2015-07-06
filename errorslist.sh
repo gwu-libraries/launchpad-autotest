@@ -4,7 +4,8 @@
 NERR=`ls | grep -c xml`
 if [ $NERR -ne 0 ]; 
 then {
-    grep -v "failures=\"0\"" *.xml | cut -f1 -d: 2>/tmp/junk.out
+    echo "Errors:"
+    grep -v "failures=\"0\"" *.xml | cut -f1 -d: 
     }
 else {
     echo "No errors found."
