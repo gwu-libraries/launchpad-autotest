@@ -1,7 +1,7 @@
 # m30_001.sh
 # not included 946
 # 
-echo 'Starting m20-001 tests '
+echo 'Starting m30-001 tests '
 sh issue.sh 984
 sh issue.sh 985
 sh issue.sh 988
