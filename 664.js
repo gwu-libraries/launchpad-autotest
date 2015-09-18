@@ -4,11 +4,11 @@
 // 
 casper.test.begin('m29_001 #664 show GM reserves (temporary holding location)', 2, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
-var USECASE='/item/12703930';
+var USECASE='/item/13375900';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
-	test.assertTextExists('Institutional economics' , 'matched title');
-	test.assertTextExists('2 Hour' , 'found Reserve holding');
+	test.assertTextExists('The killing fields' , 'matched title');
+	test.assertTextExists('Reserves', 'matched Reserve holding');
     }).run(function() {
         test.done();
     });
