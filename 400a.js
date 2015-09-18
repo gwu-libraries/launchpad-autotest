@@ -9,7 +9,7 @@ var USECASE='/item/119119';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Indian culture' , 'page title Indian culture... found');
-	test.assertSelectorHasText('a', 'Quimby, George Irving, 1913-');
+	test.assertSelectorHasText('a', 'Quimby, George I. (George Irving), 1913-2003');
     }).run(function() {
         test.done();
     });
