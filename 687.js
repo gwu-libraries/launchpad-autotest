@@ -8,7 +8,7 @@ var USECASE='/item/3846257';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Assimilating' , 'matched title');
-	test.assertTextExists('01-31-2015' , 'found renewal due date');
+	test.assertTextExists('09-30-2015' , 'found renewal due date');
     }).run(function() {
         test.done();
     });
