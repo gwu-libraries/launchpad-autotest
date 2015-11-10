@@ -56,4 +56,6 @@ echo 'Starting m31-001 tests'
 sh m31-001.sh
 echo 'Starting m32-001 tests'
 sh m32-001.sh
+echo 'Starting m33-001 tests'
+sh m33-001.sh
 echo 'Finished ALL automated scripts'
