@@ -5,6 +5,7 @@
 #1017 (no use case, construction ended?)
 #1030 fixed key error in search result
 echo 'Starting m33-001 tests '
+sh issue.sh 736
 sh issue.sh 1026
 sh issue.sh 1039
 echo 'Finished m33-001 tests'
