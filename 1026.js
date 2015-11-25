@@ -1,6 +1,6 @@
 // m33_001 list only a few subject headings and toggle to view more
 //
-casper.test.begin('m33_001 #1026 subject heading list toggle', 7, function suite(test) {
+casper.test.begin('m33_001 #1026 subject heading list toggle', 6, function suite(test) {
 casper.echo("Test environment: "+SERVER);
 var USECASE='/search?q=Statistics+and+reality+%3A+concepts+and+measurements+of+migration+in+Europe';
 var ENTITY=SERVER+USECASE;
@@ -26,8 +26,6 @@ var ENTITY=SERVER+USECASE;
     casper.then(function() {
         // verify that text has changed to "Show"
         test.assertSelectorHasText('a[href="#moresubjects7703715"]','[+] Show','toggle text is Show'); 
-        // verify that the div is not visible
-        test.assertNotVisible('#moresubjects7703715', 'subject headings div is not visible');
     });
     casper.run(function() {
         test.done();
