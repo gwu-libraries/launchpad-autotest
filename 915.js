@@ -8,7 +8,7 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Days of glory' , 'matched title');
 	test.assertTextExists('Movie Review' , 'matched Movie Review link');
-	test.assertTextExists('Available to all' , 'matched available link');
+        test.assertTextExists('Online', 'full text online button');
     }).run(function() {
         test.done();
     });
