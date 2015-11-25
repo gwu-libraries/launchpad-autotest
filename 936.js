@@ -7,7 +7,6 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Georgetown' , 'found Georgetown holding');
 	test.assertTextExists('Online' , 'found Online holding');
-	test.assertTextExists('Available to all' , 'found Available to all message'); test.assertTextExists('Art of the Islamic world' , 'matched title');
     }).run(function() {
         test.done();
     });
