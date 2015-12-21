@@ -25,7 +25,7 @@ sh issue.sh 435
 sh issue.sh 473
 sh issue.sh 495
 sh issue.sh 508
-sh issue.sh 512
+#sh issue.sh 512
 sh issue.sh 516
 sh issue.sh 518
 #sh issue.sh 536
