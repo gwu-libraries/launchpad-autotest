@@ -3,7 +3,7 @@
 //
 casper.test.begin('m35_001 #107 GM links with prefix mutex not available to all', 3, function suite(test) { 
 casper.echo("Test environment: "+SERVER);
-var USECASE='/item/7765485';
+var USECASE='/item/7114183';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Autonomic networking' , 'matched title');
