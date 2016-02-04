@@ -5,7 +5,7 @@ casper.echo("Test environment: "+SERVER);
 var USECASE='/item/7765474';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
-	test.assertTextExists('Georgetown', 'page body contains "Georgetown"');
+	test.assertTextExists('No items found', 'page no items found');
     }).run(function() {
         test.done();
     });
