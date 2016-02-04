@@ -7,7 +7,7 @@ var USECASE='/item/14732552';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('History of the invasion' , 'verified title');
-	test.assertTextExists('Shared E-Resource Collection' , 'verified WRLC location');
+	test.assertTextExists('Shared E-Resources Collection' , 'verified WRLC location');
 	test.assertTextDoesntExist('Hathi Trust Digital Library' , 'verified not Hathi location');
 	test.assertTextDoesntExist('Internet Archive' , 'verified not Internet Archive location');
     }).run(function() {
