@@ -8,7 +8,7 @@ var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
 	test.assertTextExists('Instrumental community' , 'verified title');
 	test.assertTextExists('JSTOR DDA' , 'verified DDA holding');
-	test.assertTextDoesntExist('Request' , 'verified no request link on page');
+	test.assertTextDoesntExist('CLS' , 'verified no request link on page');
     }).run(function() {
         test.done();
     });
