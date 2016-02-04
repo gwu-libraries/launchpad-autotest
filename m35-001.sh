@@ -5,6 +5,8 @@
 # Color of hide/show link 1088
 # 
 echo 'Starting m35-001 tests '
+sh issue.sh 1015a
+sh issue.sh 1015b
 sh issue.sh 1019
 sh issue.sh 1024
 sh issue.sh 1057
