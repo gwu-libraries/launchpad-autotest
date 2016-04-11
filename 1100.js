@@ -7,7 +7,7 @@ casper.echo("Test environment: "+SERVER);
 var USECASE='/item/953992';
 var ENTITY=SERVER+USECASE;
 	casper.start(ENTITY, function() {
-	test.assertTextExists('ERIC RIE' , 'matched title');
+	test.assertTextExists('Resources in education' , 'matched title');
 	test.assertTextExists('WRLC Shared' , 'matched location');
 	test.assertTextExists('Off-site' , 'matched Off-site');
 	test.assertTextDoesntExist('02-20-2020' , 'verified 02-20-2020 does not display');
