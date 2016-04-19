@@ -1,6 +1,7 @@
 # ALLISSUES.sh
-# combines m13.sh and m14.sh and m15-ALL.sh
+# 
 #
+rm *.xml
 # m13
 echo 'Starting tests for m13'
 sh m13.sh
@@ -62,4 +63,8 @@ echo 'Starting m35-001 tests'
 sh m35-001.sh
 echo 'Starting m36-001 tests'
 sh m36-001.sh
+echo 'Starting m37-001/001 tests'
+sh m37-001.sh
+echo 'Starting m39-001 tests'
+sh m39-001.sh
 echo 'Finished ALL automated scripts'
