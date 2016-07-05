@@ -63,8 +63,8 @@ echo 'Starting m35-001 tests'
 sh m35-001.sh
 echo 'Starting m36-001 tests'
 sh m36-001.sh
-echo 'Starting m37-001/001 tests'
+echo 'Starting m37-001/002 tests'
 sh m37-001.sh
-echo 'Starting m39-001 tests'
-sh m39-001.sh
+echo 'Starting m39-002 tests'
+sh m39-002.sh
 echo 'Finished ALL automated scripts'
