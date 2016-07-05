@@ -1,5 +1,8 @@
 // m37_001 provide form for requesting print version of DDA ebook.
 //
+// THIS TEST FAILS. NEED A DIFFERENT EXAMPLE. THE LINK FOR DDA IS NOT
+// SHOWN BECAUSE THIS TITLE HAS A PRINT HOLDING AT AMERIDAN
+//
 casper.test.begin('m37_001 #1102 request print edition form', 5, function suite(test) {
 casper.echo("Test environment: "+SERVER);
 var USECASE='/item/15497004';
