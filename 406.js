@@ -9,7 +9,7 @@ casper.echo(ENTITY);
     test.assertTextExists('Losing Mogadishu','title matched');
     test.assertTextExists('Georgetown','institution matched');
     test.assertTextExists('Lauinger stacks','location #1 matched');
-    test.assertTextExists('Lauinger Special Collections','location #2 matched');
+    test.assertTextExists('Special Collections','location #2 matched');
     }).run(function() {
         test.done();
     });
